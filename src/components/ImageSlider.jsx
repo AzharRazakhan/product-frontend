@@ -8,14 +8,13 @@ const DUMMY_IMAGES = [
 ];
 
 function ImageSlider({ images }) {
-    //const [mainImage, setMainImage] = useState(images[0]);
-    const [mainImage, setMainImage] = useState('https://picsum.photos/300/200?random=1')
+    const [mainImage, setMainImage] = useState(images[0]);
     images = DUMMY_IMAGES;
 
     return (
         <Box >
             <img
-                src={mainImage || 'https://picsum.photos/300/200?random=1'}
+                src={mainImage}
                 alt="product"
                 style={{
                     width: "100%",

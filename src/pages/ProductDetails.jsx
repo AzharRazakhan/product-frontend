@@ -21,6 +21,7 @@ function ProductDetail() {
     }, [id]);
 
     if (!product) return <Typography>Loading...</Typography>;
+    console.log(product, 'product---')
 
     return (
         <>
